@@ -878,11 +878,11 @@ nav input {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
 }
 
 .media-main div a .icon {
   position: relative;
-  color: #262626;
   transition: 0.5s;
   z-index: 2;
 }
@@ -925,8 +925,6 @@ nav input {
 }
 
 .container2 {
-  width: 100%;
-  max-width: 1606px;
   margin: 0 auto;
   padding: 0 12px;
   border-right: 1px solid #ffffff38;
@@ -1031,7 +1029,7 @@ nav input {
 .JessicaBiogi-main {
   position: absolute;
   top: 100px;
-  right: 0;
+  right: 100px;
 }
 
 .JessicaBiogi-svg {
@@ -1057,24 +1055,36 @@ nav input {
   bottom: 50px;
 }
 
-.worked-box {
+.card-box {
   border-radius: 15px;
-  background: var(--5, #171b22);
-  box-shadow: 0px 40px 40px -25px rgba(19, 31, 47, 0.6);
-  padding: 20px;
   width: 100%;
   max-width: 330px;
   position: absolute;
   bottom: 50px;
-  left: 0;
+  text-align: center;
 }
 
-.worked-more {
+.card-title {
   color: var(--1, #fff);
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 500;
   line-height: normal;
-  padding-bottom: 15px;
-  text-align: left;
+  padding: 9px 20px;
+}
+
+.card-items {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: var(--1, #fff);
+}
+
+.card-item {
+  color: var(--1, #fff);
+  font-size: 3rem;
+  box-shadow: 0px 40px 40px -25px rgba(19, 31, 47, 0.6);
 }
 
 .worked-more2 {
@@ -1131,11 +1141,15 @@ nav input {
 /*-----------------------[ 6.Section One Right CSS ]------------------------*/
 .section-main-right-contain {
   width: 100%;
-  max-width: 314px;
 }
 
 .section-main-right-contain-sub {
   padding: 70px;
+  border-bottom: 1px solid #ffffff38;
+}
+
+.section-main-right-contain-sub-2 {
+  padding: 80px 20px;
   border-bottom: 1px solid #ffffff38;
 }
 
@@ -6110,4 +6124,3 @@ h3 {
   text-decoration: none;
   text-transform: uppercase;
 }
-
