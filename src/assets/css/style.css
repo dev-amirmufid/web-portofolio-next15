@@ -307,6 +307,7 @@ body {
   align-items: center;
   gap: 40px;
   margin: 0;
+  min-height: 70px;
 }
 
 .top-navbar-title li a,
@@ -851,8 +852,10 @@ nav input {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100%;
+  padding-top: 70px;
   width: 100%;
+  height: 100vh;
+  margin-left: 0px !important;
 }
 
 .media-main {
@@ -1021,11 +1024,6 @@ nav input {
   justify-content: center;
 }
 
-.section-main-sub {
-  display: flex;
-  justify-content: center;
-}
-
 .JessicaBiogi-main {
   position: absolute;
   top: 100px;
@@ -1145,11 +1143,13 @@ nav input {
 
 .section-main-right-contain-sub {
   padding: 70px;
+  border-top: 1px solid #ffffff38;
   border-bottom: 1px solid #ffffff38;
 }
 
 .section-main-right-contain-sub-2 {
   padding: 80px 20px;
+  border-top: 1px solid #ffffff38;
   border-bottom: 1px solid #ffffff38;
 }
 
@@ -1295,7 +1295,7 @@ nav input {
 .digit {
   position: absolute;
   bottom: 170px;
-  right: 200px;
+  right: 170px;
   color: var(--5, #171b22);
   text-align: center;
   font-size: 140px;
@@ -1675,22 +1675,10 @@ nav input {
 
 .logos:before {
   left: 0;
-  background: linear-gradient(
-    to right,
-    hsl(215.75deg 20.16% 7.73%) 0%,
-    rgba(0, 0, 0, 0) 99%,
-    rgba(0, 0, 0, 0) 100%
-  );
 }
 
 .logos:after {
   right: 0;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 1%,
-    rgb(16 21 27) 98%
-  );
 }
 
 .logos:hover .logos-slide {

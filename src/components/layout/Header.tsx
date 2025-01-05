@@ -48,10 +48,7 @@ export const Header = () => {
   return (
     <>
       {/* <!-- ====================================== Main Menu ===================================== --> */}
-      <header
-        id="top-navbar"
-        className={`top-navbar ${isFixed ? "fixed" : ""}`}
-      >
+      <header id="top-navbar" className={`top-navbar fixed`}>
         <div className="container">
           <div className="top-navbar_full">
             <div className="back-btn">

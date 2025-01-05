@@ -8,7 +8,12 @@ export const TopNavbar = ({ menu, isShow = true }: NavbarProps) => {
     isShow && (
       <ul className="top-navbar-title">
         {menu.map((item, index) => (
-          <li key={index}>
+          <li
+            key={index}
+            className={
+              item.href === window.location.pathname ? "menu-active" : ""
+            }
+          >
             <Link href={item.href}>{item.name}</Link>
           </li>
         ))}
