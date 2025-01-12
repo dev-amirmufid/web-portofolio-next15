@@ -1556,10 +1556,27 @@ nav input {
   padding-top: 24px;
 }
 
+.work-experience .comment {
+  color: var(--14, #909090);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+.work-experience h3 {
+  color: var(--1, #fff);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: left;
+}
+
 .nested-accordion {
   cursor: pointer;
   position: relative;
 }
+
 
 .nested-accordion .comment {
   color: var(--14, #909090);
@@ -1730,30 +1747,56 @@ nav input {
 
 .skill-type-main {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
   gap: 30px;
   padding-top: 60px;
 }
 
+.skills-box-main .skill-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
 .skills-box-main {
-  width: 300px;
-  height: 390px;
-  border-radius: 150px;
+  min-width: 300px;
+  min-height: 300px;
+  width: 100%;
+  border-radius: 3rem;
   background: var(--5, #171b22);
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .skills-box-main:hover {
   background-image: url(../images/skills_hover-img.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
+  background-size: 135%;
+  /* height: 100%; */
+}
+
+.skills-box-main h2 {
+  font-size: 26px;
+  color: #fff;
+  line-height: 34px;
+  font-weight: 600;
+  padding: 20px 0 20px 0;
+  width: 100%;
+  max-width: 200px;
+}
+
+.skills-box-main:hover.skills-box-main h2 {
+  background: var(--13, linear-gradient(90deg, #ff7d61 0%, #ffdb59 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .skills-box-main img {
