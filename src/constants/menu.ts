@@ -8,10 +8,6 @@ export const NavMenu = [
     href: "/about",
   },
   {
-    name: "Services",
-    href: "/services",
-  },
-  {
     name: "Portfolio",
     href: "/portfolio",
   },
